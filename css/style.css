@@ -98,3 +98,10 @@ main {
 .enjoy {
     background-image: url("../images/enjoy.jpg");
 }
+
+@media (max-width: 900px)  {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
