@@ -27,3 +27,24 @@ header {
     color: white;
     font-size: 2rem;
 }
+
+nav {
+    background-color: rgb(180, 120, 80);
+    width: 100%
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 4rem;
+    color: white;
+    padding: 0.7rem;
+}
+nav li {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+nav li:hover {
+    color: rgb(10, 10, 255);
+    cursor: pointer;
+}
