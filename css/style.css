@@ -18,15 +18,24 @@ header {
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding-left: 3rem;
-    background-image: url("../images/header1.jpg");
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-right: 4rem;
+    padding-top: 9rem;
+    background-image: url("../images/header.jpg");
     background-size: cover;
-    min-height: 45vh;
+    min-height: 93vh;
     background-position: center;
     color: white;
     font-size: 2rem;
+}
+h1 {
+    font-size: 4 rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: rgb(255, 250, 240);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
 }
 
 nav {
@@ -39,7 +48,7 @@ nav ul {
     list-style: none;
     align-items: center;
     gap: 4rem;
-    padding: 0.7rem;
+    padding: 1rem;
 }
 nav li {
     font-weight: bold;
@@ -50,11 +59,16 @@ nav li:hover {
     color: rgb(10, 80, 255);
     cursor: pointer;
 }
-main {
-    padding: 0.7rem 1rem;
+.page-bg {
+    background-size: cover;
+    background: linear-gradient(rgba(255,255,255, 0.3), rgba(180, 210, 230, 0.5)), url("../images/main1.jpg");
+    background-position: 40% 10%;
+
 }
-
-
+main {
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -98,10 +112,29 @@ main {
 .enjoy {
     background-image: url("../images/enjoy.jpg");
 }
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: rgb(90, 60, 40);
+
+}
+footer strong {
+    color: rgb(42, 89, 120);
+}
+
 
 @media (max-width: 900px)  {
     .cards {
         flex-direction: column;
         align-items: center;
+        background-size: cover;
+        background-position: bottom;
+    }
+    header h1 {
+        font-size: 3rem;
+    }
+    header {
+        align-items: center;
+        padding-right: 0;
     }
 }
